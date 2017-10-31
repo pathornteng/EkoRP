@@ -1,0 +1,16 @@
+.DS_Store
+node_modules
+*.log
+*.rdb
+*.iml
+~*
+!.gitignore
+public/assets/*
+dump.rdb
+packed/
+uploads/
+.env
+tmp
+.vscode/
+
+.idea/
