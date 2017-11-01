@@ -1,11 +1,36 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+ 
+<head>
+  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+ 
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="google" value="notranslate">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+ 
+  <title>My App</title>
+</head>
+ 
+<body>
+ 
+  <div class="well">
+    <h1>Login succes</h1>
+  </div> 
+  <div class="well">
+    <h3>ID Token</h3>
+    <pre><%- JSON.stringify(id_token,null, 2) %></pre>
+  </div>
+  <div class="well">
+    <h3>All Tokens</h3>
+    <pre><%- JSON.stringify(token,null, 2) %></pre>
+  </div>
+  <div class="well">
+    <h3>Userinfo</h3>
+    <pre><%- JSON.stringify(userinfo,null, 2) %></pre>
+  </div>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
 </html>
